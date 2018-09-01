@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>An empty Swift extension.</string>
+	<key>Summary</key>
+	<string>An empty Swift extension</string>
+	<key>SortOrder</key>
+	<string>9</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<!-- This identifier should be productName; otherwise Xcode will
+				 ask for an explicit file name as a second step. :/ -->
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Extension name:</string>
+			<key>Description</key>
+			<string>The identifier of the extension, for the file name</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>extendedType</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Extending:</string>
+			<key>Description</key>
+			<string>The type that is being extended</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>HasConformance</string>
+			<key>Name</key>
+			<string>Conforms to:</string>
+			<key>Description</key>
+			<string>Does this extension conform to a protocol</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Required</key>
+			<false/>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>protocol</string>
+			<key>Required</key>
+			<false/>
+			<key>Description</key>
+			<string>A protocol this extension conforms to</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>HasConformance</key>
+				<!-- This value must be string true, not <true/> -->
+				<string>true</string>
+			</dict>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

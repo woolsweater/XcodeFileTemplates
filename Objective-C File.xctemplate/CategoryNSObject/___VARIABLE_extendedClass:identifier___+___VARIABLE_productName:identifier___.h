@@ -1,0 +1,5 @@
+___IMPORTHEADER_extendedClass___
+
+@interface ___VARIABLE_extendedClass:identifier___ (___VARIABLE_productName:identifier___)
+
+@end

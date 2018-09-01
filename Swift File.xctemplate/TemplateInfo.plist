@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>An empty Swift class, protocol, or enum.</string>
+	<key>Summary</key>
+	<string>An empty Swift entity</string>
+	<key>SortOrder</key>
+	<string>29</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Name:</string>
+			<key>Description</key>
+			<string>The name of the type to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>entityType</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Kind:</string>
+			<key>Description</key>
+			<string>What kind of entity the file contains</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Empty File</string>
+			<key>Values</key>
+			<array>
+				<string>Empty File</string>
+				<string>Class</string>
+				<string>Struct</string>
+				<string>Protocol</string>
+				<string>Enum</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>HasSupertype</string>
+			<key>Name</key>
+			<string>Inheriting or conforming:</string>
+			<key>Description</key>
+			<string>Does this type have a supertype</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>entityType</key>
+				<array>
+					<string>Class</string>
+					<string>Struct</string>
+					<string>Protocol</string>
+					<string>Enum</string>
+				</array>
+			</dict>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>supertype</string>
+			<key>Required</key>
+			<false/>
+			<key>Description</key>
+			<string>A supertype for this type</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>HasSupertype</key>
+				<!-- This value must be string true, not <true/> -->
+				<string>true</string>
+			</dict>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>ClassOnly</string>
+			<key>Name</key>
+			<string>Only classes may conform to this protocol</string>
+			<key>Description</key>
+			<string>Create a class-only protocol</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>entityType</key>
+				<array>
+					<string>Protocol</string>
+				</array>
+			</dict>
+			<key>Default</key>
+			<false/>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
