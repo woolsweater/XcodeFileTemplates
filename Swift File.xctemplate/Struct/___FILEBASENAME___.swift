@@ -1,6 +1,6 @@
 import <#Foundation#>
 
-/** ___FILEBASENAMEASIDENTIFIER___ documentation */
+/** <#___FILEBASENAMEASIDENTIFIER___ documentation#> */
 struct ___FILEBASENAMEASIDENTIFIER___ {
 
 }
