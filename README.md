@@ -8,7 +8,7 @@ Installing them is simple:
 
 (Unfortunately it seems they will always be at the bottom of the sheet.)
 
-The templates are contained in a bundle structure: each .xctemplate directory has an Info.plist describing its contents, icons for the sheet, and the templates themselves. The Info.plist can describe various options for the template; it's sort of a mini-nib. See https://www.bobmccune.com/2012/03/04/creating-custom-xcode-4-file-templates/ for lots of details.
+The templates are contained in a bundle structure: each .xctemplate directory has an Info.plist describing its contents, icons for the sheet, and the templates themselves. The Info.plist can describe various options for the template; it's sort of a mini-nib. See https://web.archive.org/web/20180513032800/http://www.bobmccune.com:80/2012/03/04/creating-custom-xcode-4-file-templates for lots of details.
 
 The options are used to select the template file, whose name is given under the MainTemplateFiles key in the plist (the usual name is just `___FILEBASENAME___`). There's some undocumented process to select the inner directory holding the final template (it seems to be concatenation of the option values). In the Cocoa Touch Class template bundle, for example, you can see subdirectories that each contain a `___FILEBASENAME___` for their respective language.
 
