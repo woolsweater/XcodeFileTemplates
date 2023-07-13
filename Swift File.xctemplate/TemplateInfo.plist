@@ -116,5 +116,7 @@
 			<true/>
 		</dict>
 	</array>
+	<key>SupportsSwiftPackage</key>
+	<true/>
 </dict>
 </plist>
